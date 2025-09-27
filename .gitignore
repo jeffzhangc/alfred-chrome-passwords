@@ -6,3 +6,4 @@ chromepass
 bin/*
 src/info.plist
 Makefile
+!bin/.gitkeep

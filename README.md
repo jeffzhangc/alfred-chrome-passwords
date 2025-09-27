@@ -11,7 +11,13 @@ Browse your passwords saved in Google Chrome using Alfred instead of https://pas
 See [releases](https://github.com/sadovnychyi/alfred-chrome-passwords/releases)
 to download latest build. Simply open it with Alfred and follow instructions.
 
+git clone https://github.com/jeffzhangc/alfred-chrome-passwords.git
+
+make build
+
 use golang to implement
+
+use `cp` instead of password
 
 # Usage
 

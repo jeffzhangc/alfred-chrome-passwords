@@ -113,6 +113,11 @@ func queryPasswords() {
 		query = strings.Join(os.Args[2:], " ")
 	}
 
+	if len(query) < 1 {
+		fmt.Println()
+		return
+	}
+
 	for rows.Next() {
 		var originURL, username, passwordValue string
 		if err := rows.Scan(&originURL, &username, &passwordValue); err != nil {
@@ -168,6 +173,10 @@ func queryPasswords() {
 	} else {
 		// 实现模糊搜索
 		results = fuzzySearch(passwords, query)
+	}
+
+	if len(results) > 10 {
+		results = results[:10]
 	}
 
 	// 输出Alfred兼容的JSON

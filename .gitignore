@@ -2,3 +2,7 @@ Crypto
 fuzzywuzzy
 *.dist-info
 *.egg-info
+chromepass
+bin/*
+src/info.plist
+Makefile

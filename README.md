@@ -11,20 +11,16 @@ Browse your passwords saved in Google Chrome using Alfred instead of https://pas
 See [releases](https://github.com/sadovnychyi/alfred-chrome-passwords/releases)
 to download latest build. Simply open it with Alfred and follow instructions.
 
+use golang to implement
+
 # Usage
 
-Type `password` keyword to see the most frequent passwords you have used.
+cp means chrome password
+
+Type `cp` keyword to see the most frequent passwords you have used.
 Continue typing to filter them and press `Enter` to copy it. Note that by
 default you will be required to type your OS password to decrypt selected
 password.
-
-# Using non-default profile
-
-Provide `--profile` argument to `passwords.py` script. For example:
-```bash
-python passwords.py --query="$1" --profile="Profile 1"
-```
-![image](https://cloud.githubusercontent.com/assets/193864/17643119/9ac8a2d2-6192-11e6-9763-b53ad6769a1c.png)
 
 # Security
 
